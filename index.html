@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EasyPhotoShow</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style type="text/css">
+	
+	.EasyPhotoShow{
+    box-shadow: 2px 2px 5px 0px;
+    border-style: ridge;
+    border-width: 0.25px;		
+	}
+
+	.EasyPhotoShow:hover {
+		cursor: pointer;
+	}
+
+</style>
+<body>
+
+<!--  Horizontal bar test -->
+<div style="width:100%; text-align: center;">
+	<h1>Horizontal bar</h1>
+	<img class="EasyPhotoShow" src="img/light.jpg" width="133.3" height="100">
+
+	<img class="EasyPhotoShow" src="img/javascript.gif" width="229" height="100">
+
+	<img class="EasyPhotoShow" src="img/city.jpg" width="600" height="100">
+
+</div>
+
+<!-- Vertical bar test -->
+<div style="width:100%; text-align: center;">
+	<h1>Vertical bar</h1>
+	<img class="EasyPhotoShow" src="img/rose.jpg" width="250" height="400">
+
+	<img class="EasyPhotoShow" src="img/sea.jpg" width="120" height="400" >
+
+	<img class="EasyPhotoShow" src="img/city2.jpg" width="111.1" height="400">
+
+</div>
+
+<!-- Large Photo test -->
+<div style="width:100%; text-align: center;">
+	<h1>Large Photo</h1>
+	<img class="EasyPhotoShow" src="img/nature.jpg" width="768" height="432">
+</div>
+
+<!-- Same width and height test -->
+<div style="width:100%; text-align: center;">
+	<h1>Same width and height</h1>
+	<img class="EasyPhotoShow" src="img/stars.jpg" width="300" height="300">
+	<img class="EasyPhotoShow" src="img/chair.jpg" width="300" height="300">
+	<img class="EasyPhotoShow" src="img/room.jpg" width="300" height="300">
+</div>
+
+
+<script type="text/javascript" src="src/easyphotoshow-min.js"></script>
+<script type="text/javascript">
+
+
+
+// EasyPhotoShow.show()
+// 			 .speed(100)
+// 			 .scenes(true)
+// 			 .responsive(true)
+// 			 .fixedScenes(true)
+// 			 .animateShow(true);	
+
+var data = {
+	speed : 100,
+	scenes : true,
+	fixedScenes : false,
+	responsive : true,
+	scenesStyle : "background:white;",
+	animateShow : true
+};
+
+EasyPhotoShow.show(data);
+
+
+</script>
+</body>
+</html>
