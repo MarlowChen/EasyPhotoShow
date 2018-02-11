@@ -3,6 +3,8 @@
 This is a simple javascript library. You can enlarge the image after click.
 default image size is original image size.
 
+![Alt text](/img/EasyPhotoShow.gif)
+
 ## Features
 
 * Easy to use 
